@@ -10,7 +10,14 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Guess the song")
+
         button = QPushButton("Confirm!")
+
+        # set weight and height
+        # self.setFixedSize(QSize(400, 300))
+
+        self.setMinimumSize(600, 500)
+        self.setMaximumSize(1200, 1200)
 
         # set central widget window
         self.setCentralWidget(button)
@@ -25,4 +32,3 @@ window.show()
 
 # starting event to no close window
 app.exec()
-
